@@ -1,0 +1,4 @@
+C:\projects\5.7.0\src\STEP.Common\obj\Debug\netstandard2.0\STEP.Common.csprojAssemblyReference.cache
+C:\projects\5.7.0\src\STEP.Common\obj\Debug\netstandard2.0\STEP.Common.csproj.CoreCompileInputs.cache
+C:\projects\5.7.0\src\STEP.Common\obj\Debug\netstandard2.0\STEP.Common.AssemblyInfoInputs.cache
+C:\projects\5.7.0\src\STEP.Common\obj\Debug\netstandard2.0\STEP.Common.AssemblyInfo.cs

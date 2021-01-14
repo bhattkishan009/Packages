@@ -1,0 +1,31 @@
+﻿@model int
+<link rel="stylesheet" href="https://unpkg.com/formiojs@latest/dist/formio.full.min.css">
+    <script src="https://unpkg.com/formiojs@latest/dist/formio.full.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    <div id="formio"></div>
+    <script>
+        $(function () {
+            $.ajax({
+                url: '@Url.Action("GetForm", "Home", null, this.Request.Url.Scheme)',
+                contentType: 'application/json',
+                success: function (data) {
+                    Formio.icons = 'fontawesome';
+                    Formio.createForm(document.getElementById('formio'), data.result)
+                        .then(function (form) {
+                            Formio.fetch('@Url.Action("GetData", "Home", new { id = Model } , this.Request.Url.Scheme)', {
+                                        headers: {
+                                    'content-type': 'application/json'
+                                },
+                                mode: 'cors',
+                            }).then(function (response) {
+                                response.json().then(function (result) {
+                                    form.submission = {
+                                        data: result.result[0].data
+                                    };
+                                    });
+                                });
+                        });
+                }
+            });
+        });
+    </script>

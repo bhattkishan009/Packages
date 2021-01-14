@@ -1,0 +1,35 @@
+﻿<style>
+    table tr td
+    {
+        border:1px solid black;
+        padding:5px;
+    }
+</style>
+@model List<STEP.Customer.CustomerDto>
+<h3>Customer</h3>
+<table>
+    <tr>
+        <th></th>
+        <th>Id</th>
+        <th>Name</th>
+        <th>PhoneNumber</th>
+        <th>EmailAddress</th>
+        <th>StreetAddress</th>
+        <th>City</th>
+        <th>ZipCode</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@Html.ActionLink("Details","Details", new { id = item.Id })</td>
+            <td>@item.Id</td>
+            <td>@item.Name</td>
+            <td>@item.PhoneNumber</td>
+            <td>@item.EmailAddress</td>
+            <td>@item.StreetAddress</td>
+            <td>@item.City</td>
+            <td>@item.ZipCode</td>
+        </tr>
+    }
+
+</table>
