@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "O8u/NHlsrYiB+Tr19kwn1T0gmydzA8XHCVpdFa+/tVCkOjD1L06zyhruD+km+I09yQM+WtG+3wX/7Np3E+X5dA==",
+  "success": true,
+  "projectFilePath": "D:\\projects\\STEP.Common\\STEP.Common.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\bhatt\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\bhatt\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
